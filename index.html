@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suivi des dépenses</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <h1>💸 Suivi des dépenses</h1>
+
+  <div class="category">
+    <h2>🚆 Train</h2>
+    <input type="number" id="trainInput" placeholder="Montant €">
+    <button onclick="addExpense('train')">Ajouter</button>
+    <p>Total : <span id="trainTotal">0</span> €</p>
+  </div>
+
+  <div class="category">
+    <h2>🚇 Métro</h2>
+    <input type="number" id="metroInput" placeholder="Montant €">
+    <button onclick="addExpense('metro')">Ajouter</button>
+    <p>Total : <span id="metroTotal">0</span> €</p>
+  </div>
+
+  <div class="category">
+    <h2>🥦 Alimentation</h2>
+    <input type="number" id="foodInput" placeholder="Montant €">
+    <button onclick="addExpense('food')">Ajouter</button>
+    <p>Total : <span id="foodTotal">0</span> €</p>
+  </div>
+
+  <h2>Total général : <span id="globalTotal">0</span> €</h2>
+
+  <script src="app.js"></script>
+</body>
+</html>
